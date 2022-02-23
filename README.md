@@ -1,4 +1,4 @@
-# Big Data Analytics on Cardio Vascular DiseaseBig Data Analytics on Cardio Vascular Disease
+# Big Data Analytics on Cardio Vascular Disease
 
 Associated with Andhra UniversityAssociated with Andhra University
 
