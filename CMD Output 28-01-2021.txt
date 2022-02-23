@@ -1,0 +1,49 @@
+Microsoft Windows [Version 10.0.19042.746]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>start-all.cmd
+This script is Deprecated. Instead use start-dfs.cmd and start-yarn.cmd
+starting yarn daemons
+
+C:\Windows\system32>hadoop fs -ls -d https://localhost:9870/heartinputf2/processed.cleveland.data
+-rw-rw-rw-   1         -1 1970-01-01 05:30 https://localhost:9870/heartinputf2/processed.cleveland.data
+
+C:\Windows\system32>cd C:\Users\R\Downloads\Ro_Project
+
+C:\Users\R\Downloads\Ro_Project>hdfs dfs -mkdir -p /user/$HIVE_USER
+
+C:\Users\R\Downloads\Ro_Project>hdfs dfs -mkdir -p /apps/hive/warehouse
+
+C:\Users\R\Downloads\Ro_Project>hdfs dfs -mkdir -p /tmp/hive
+
+C:\Users\R\Downloads\Ro_Project> hdfs dfsadmin -safemode leave\
+Usage: hdfs dfsadmin [-safemode enter | leave | get | wait | forceExit]
+
+C:\Users\R\Downloads\Ro_Project> hdfs dfsadmin -safemode leave
+Safe mode is OFF
+
+C:\Users\R\Downloads\Ro_Project>hadoop fs -mkdir /user/mydata
+
+C:\Users\R\Downloads\Ro_Project>hdfs dfs -mkdir -p /new/directory'
+
+C:\Users\R\Downloads\Ro_Project>hadoop fs -ls /
+Found 7 items
+drwxr-xr-x   - R      supergroup          0 2021-01-28 23:19 /apps
+drwxr-xr-x   - dr.who supergroup          0 2021-01-27 17:29 /hapinput
+drwxr-xr-x   - R      supergroup          0 2021-01-28 22:53 /heartinput
+drwxr-xr-x   - R      supergroup          0 2021-01-28 23:29 /new
+drwxr-xr-x   - dr.who supergroup          0 2020-12-13 16:17 /s
+drwxr-xr-x   - R      supergroup          0 2021-01-28 23:21 /tmp
+drwxr-xr-x   - R      supergroup          0 2021-01-28 23:28 /user
+
+C:\Users\R\Downloads\Ro_Project>Heartatack-1.0-SNAPSHOT.jar hap.MainClass
+
+C:\Users\R\Downloads\Ro_Project>stop-all.cmd
+This script is Deprecated. Instead use stop-dfs.cmd and stop-yarn.cmd
+SUCCESS: Sent termination signal to the process with PID 13656.
+SUCCESS: Sent termination signal to the process with PID 8148.
+stopping yarn daemons
+SUCCESS: Sent termination signal to the process with PID 9204.
+SUCCESS: Sent termination signal to the process with PID 2256.
+
+INFO: No tasks running with the specified criteria.

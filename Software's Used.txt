@@ -1,0 +1,7 @@
+Apache-Hive-2.3.8.bin.tar.gz
+Hive-cmd-Master
+hive-site
+ideaIU-2020.3.2
+mysql-connectro-java-8.0.23.jar
+mysql-installer-community-8.0.23.0
+setup-x86_64
